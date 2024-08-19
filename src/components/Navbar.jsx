@@ -19,12 +19,12 @@ import { Link } from 'react-router-dom';
 // personalizacao
 const StyledToolbar = styled(Toolbar) ({
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
 });
 
 const ListMenu = styled(List)(({ theme }) => ({
     display: 'none',
-    [theme.breakpoints.up("sm")] : {
+    [theme.breakpoints.up("md")] : {
         display: "flex",
     },
 }));
@@ -32,15 +32,23 @@ const ListMenu = styled(List)(({ theme }) => ({
 //rotas
 const itemList = [
     {
-      text: "Home",
+      text: "Для кондитеров",
       to: "/" 
     },
     {
-      text: "About",
+      text: "Для потребителей",
       to: "/about"
     },
     {
-        text: "Contact",
+        text: "О нас",
+        to: "/contact"
+    },
+    {
+        text: "Наша миссия",
+        to: "/contact"
+    },
+    {
+        text: "Для связи",
         to: "/contact"
     }
 ];
@@ -53,7 +61,8 @@ const Navbar = () => {
         component="nav" 
         position="sticky"
         sx={{ 
-            backgroundColor: 'orange', 
+            backgroundColor: 'transparent',
+            height: "50px"
         }}
         elevation={0}
         >
@@ -61,14 +70,14 @@ const Navbar = () => {
                 <Typography
                 variant="h6"
                 component="h2"
-
+                style={{fontFamily: "GirloSP", marginRight: "auto"}}
                 >
-                    HBSales
+                    NIKO
                 </Typography>
-                <Box sx={{display: { xs: 'block', sm: 'none' } }}>
+                <Box sx={{display: { xs: 'block', md: 'none' } }}>
                     <DrawerItem /> 
                 </Box>
-                <ListMenu>
+                <ListMenu style={{marginRight: "auto"}}>
                     {itemList.map( ( item ) => {
                         const { text } = item;
                         return(
@@ -78,8 +87,9 @@ const Navbar = () => {
                                     color: '#fff',
                                     "&:hover": {
                                         backgroundColor: 'transparent',
-                                        color: '#1e2a5a',
-                                    }
+                                        color: '#cd0ad4',
+                                    },
+                                    whiteSpace: "nowrap"
                                 }}
                                 >
                                     <ListItemText primary={text} />

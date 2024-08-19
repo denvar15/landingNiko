@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "GirloSP";
+    src: url('./GirloSP.otf');
+    src: url('./GirloSP.otf') format('otf');
+}
+
+@font-face {
+    font-family: "Cakra";
+    src: url('./Cakra-Normal.woff');
+    src: url('./Cakra-Normal.woff') format('woff');
+}

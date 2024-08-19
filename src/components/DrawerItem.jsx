@@ -32,21 +32,31 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 //rotas
 const itemList = [
-  {
-    text: "Home",
-    icon: <HomeIcon />,
-    to: "/"
-  },
-  {
-    text: "About",
-    icon: <InfoIcon />,
-    to: "/about"
-  },
-  {
-    text: "Contact",
-    icon: <EmailIcon />,
-    to: "/contact"
-  }
+    {
+        text: "Для кондитеров",
+        icon: <HomeIcon />,
+        to: "/"
+    },
+    {
+        text: "Для потребителей",
+        icon: <HomeIcon />,
+        to: "/about"
+    },
+    {
+        text: "О нас",
+        icon: <InfoIcon />,
+        to: "/contact"
+    },
+    {
+        text: "Наша миссия",
+        icon: <HomeIcon />,
+        to: "/contact"
+    },
+    {
+        text: "Для связи",
+        icon: <EmailIcon />,
+        to: "/contact"
+    }
 ];
 
 

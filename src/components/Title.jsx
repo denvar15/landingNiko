@@ -9,7 +9,10 @@ const Title = ({ text, textAlign }) => {
     sx={{ 
       fontWeight: '700',
       textAlign: textAlign,
-   }}
+        color: 'white',
+        marginTop: 'auto',
+        marginBottom: 'auto'
+    }}
     >
       {text}
     </Typography>
