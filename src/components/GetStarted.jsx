@@ -135,28 +135,23 @@ const GetStarted = () => {
                 px: 3,
                 textAlign: "center",
                 marginTop: "auto",
-                marginBottom: 'auto'
+                marginBottom: 'auto',
             }}
             >
                 <img src={leftCurve} alt=""
-                style={{
-                    width: "55px",
-                }}
+                     style={{width: '5vh'}}
                 />
             </Grid>
 
             <Grid item xs={12} sm={4} md={3}
-                  sx={{
+                  sx={theme => ({
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
-                      textAlign: "center"
-                  }}
+                      textAlign: "center",
+                      width: "105px",
+                  })}
             >
-                <img src={img1} alt=""
-                     style={{
-                         width: "105px",
-                     }}
-                />
+                <img src={img1} style={{width: '50%'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Интерфейс для управления заказами
                 </Typography>
@@ -166,14 +161,11 @@ const GetStarted = () => {
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
-                      textAlign: "center"
+                      textAlign: "center",
+                      width: "105px",
                   }}
             >
-                <img src={img2} alt=""
-                     style={{
-                         width: "105px",
-                     }}
-                />
+                <img src={img2} style={{width: '50%'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Инструменты для анализа доходов и расходов
                 </Typography>
@@ -183,14 +175,11 @@ const GetStarted = () => {
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
-                      textAlign: "center"
+                      textAlign: "center",
+                      width: "105px",
                   }}
             >
-                <img src={img3} alt=""
-                     style={{
-                         width: "105px",
-                     }}
-                />
+                <img src={img3} style={{width: '50%'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Возможность публикации в блоге
                 </Typography>
@@ -202,13 +191,11 @@ const GetStarted = () => {
                       py: 3,
                       textAlign: "center",
                       marginTop: "auto",
-                      marginBottom: 'auto'
+                      marginBottom: 'auto',
                   }}
             >
                 <img src={rightCurve} alt=""
-                     style={{
-                         width: "55px",
-                     }}
+                     style={{width: '5vh'}}
                 />
             </Grid>
         </Grid>
