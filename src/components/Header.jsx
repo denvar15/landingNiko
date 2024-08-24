@@ -28,8 +28,6 @@ const Header = () => {
         [theme.breakpoints.down('md')]: {
             flex: '2',
             textAlign: 'center',
-            paddingLeft: theme.spacing(2),
-            paddingRight: theme.spacing(2),
             marginTop: "350px",
         }
     }));
@@ -39,10 +37,15 @@ const Header = () => {
         fontSize: "220px",
         color: '#fff',
         fontFamily: "GirloSP",
-        marginRight: "auto",
+        marginLeft: 'auto',
+        marginRight: 'auto',
         [theme.breakpoints.down('md')]: {
             fontWeight: 700,
-            fontSize: "180px",
+            fontSize: "160px",
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontWeight: 700,
+            fontSize: "20vw",
         }
     }));
 
@@ -71,12 +74,12 @@ const Header = () => {
               />
               <Box sx={theme => ({
                   zIndex: "-1",
-                  [theme.breakpoints.down('md')]:{
+                  [theme.breakpoints.down('lg')]:{
                       flex: '1',
                       alignSelf: 'center',
                       height: "570px",
                   },
-                  [theme.breakpoints.up('md')]:{
+                  [theme.breakpoints.up('lg')]:{
                       flex: '2',
                       alignSelf: 'flex-end',
                       height: "642px",
@@ -97,6 +100,7 @@ const Header = () => {
                   position: "absolute",
                   marginTop: "150px",
                   zIndex: "0",
+                  display: 'none',
                   [theme.breakpoints.down('md')]:{
                       marginTop: "80px",
                       marginRight: "-260px",
@@ -113,14 +117,14 @@ const Header = () => {
                   />
               </Box>
               <Box sx={theme => ({
-                  [theme.breakpoints.down('md')]:{
+                  [theme.breakpoints.down('lg')]:{
                       flex: '1',
                       paddingTop: '0px',
                       display: 'none',
                       alignSelf: 'center',
                       height: "595px",
                   },
-                  [theme.breakpoints.up('md')]:{
+                  [theme.breakpoints.up('lg')]:{
                       flex: '2',
                       alignSelf: 'flex-end',
                       height: "642px",

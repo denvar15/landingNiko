@@ -62,7 +62,7 @@ const Navbar = () => {
         position="sticky"
         sx={{ 
             backgroundColor: 'transparent',
-            height: "50px"
+            height: "50px",
         }}
         elevation={0}
         >
@@ -74,8 +74,8 @@ const Navbar = () => {
                 >
                     NIKO
                 </Typography>
-                <Box sx={{display: { xs: 'block', md: 'none' } }}>
-                    <DrawerItem /> 
+                <Box sx={{display: { xs: 'block', md: 'none' }}}>
+                    <DrawerItem />
                 </Box>
                 <ListMenu style={{marginRight: "auto"}}>
                     {itemList.map( ( item ) => {

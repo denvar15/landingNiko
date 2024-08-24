@@ -43,8 +43,8 @@ const GetStarted = () => {
         marginBottom: 'auto',
         [theme.breakpoints.down('sm')]: {
             fontWeight: 100,
-            fontSize: "45px",
-        }
+            fontSize: "35px",
+        },
     }));
 
     return (
@@ -86,9 +86,9 @@ const GetStarted = () => {
                       py: 3,
                   }}
             >
-                <Grid container xs={6} sm={8} md={8}
+                <Grid container xs={6} sm={7} md={6.5}
                       sx={{
-                          px: 4,
+                          px: 1,
                           order: {xs: 4, sm: 4, md: 3}
                       }}
                 >
@@ -96,103 +96,136 @@ const GetStarted = () => {
                         СВЯЖИТЕСЬ С НАМИ
                     </TextNIKO>
                 </Grid>
-                <Grid container xs={3} sm={2} md={2}
+                <Grid container xs={2} sm={1} md={2.5}
                       sx={{
                           px: 4,
                           order: {xs: 4, sm: 4, md: 3}
                       }}
+                >
+                </Grid>
+                <Grid container xs={1} sm={1} md={1}
+                      sx={theme => ({
+                          order: {xs: 4, sm: 4, md: 3},
+                          marginTop: 'auto',
+                          marginBottom: 'auto',
+                          [theme.breakpoints.down('md')]: {
+                              height: "10vw",
+                              width: "10vw",
+                          }
+                      })}
+                      style={{maxHeight: "75px",
+                          maxWidth: "75px"}}
                 >
                     <img src={icon2} alt=""
-                         style={{
-                             height: "75px",
-                             width: "75px",
-                             marginTop: 'auto',
-                             marginBottom: 'auto'
-                         }}
+                        style={{aspectRatio: '1/1', width: '100%'}}
                     />
                 </Grid>
-                <Grid container xs={2} sm={2} md={2}
+                <Grid container xs={0.5} sm={0.5} md={0.5}
                       sx={{
-                          px: 4,
+                          px: 2,
                           order: {xs: 4, sm: 4, md: 3}
                       }}
                 >
+                </Grid>
+                <Grid container xs={1} sm={1} md={1}
+                      sx={theme => ({
+                          order: {xs: 4, sm: 4, md: 3},
+                          height: "75px",
+                          width: "75px",
+                          marginTop: 'auto',
+                          marginBottom: 'auto',
+                          [theme.breakpoints.down('md')]: {
+                              height: "10vw",
+                              width: "10vw",
+                          }
+                      })}
+                      style={{maxHeight: "75px",
+                          maxWidth: "75px"}}
+                >
                     <img src={icon1} alt=""
-                         style={{
-                             height: "75px",
-                             width: "75px",
-                             marginTop: 'auto',
-                             marginBottom: 'auto'
-                         }}
+                         style={{aspectRatio: '1/1', width: '100%'}}
                     />
                 </Grid>
             </Grid>
 
-            <Grid item xs={12} sm={4} md={1.5}
-            sx={{
+            <Grid item xs={0} sm={1.5} md={1.5}
+            sx={theme => ({
                 order: {xs: 4, sm: 4, md: 3},
                 py: 3,
                 px: 3,
                 textAlign: "center",
                 marginTop: "auto",
                 marginBottom: 'auto',
-            }}
+                [theme.breakpoints.down('sm')]:{
+                    display: 'none'
+                },
+                [theme.breakpoints.up('sm')]:{
+                    display: 'block'
+                },
+            })}
             >
                 <img src={leftCurve} alt=""
                      style={{width: '5vh'}}
                 />
             </Grid>
 
-            <Grid item xs={12} sm={4} md={3}
+            <Grid item xs={12} sm={3} md={3}
                   sx={theme => ({
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
                       textAlign: "center",
-                      width: "105px",
+                      width: "100%",
                   })}
             >
-                <img src={img1} style={{width: '50%'}} alt=""/>
+                <img src={img1} style={{width: '50%', maxWidth: '150px'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Интерфейс для управления заказами
                 </Typography>
             </Grid>
 
-            <Grid item xs={12} sm={4} md={3}
+            <Grid item xs={12} sm={3} md={3}
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
                       textAlign: "center",
-                      width: "105px",
+                      width: "100%",
                   }}
             >
-                <img src={img2} style={{width: '50%'}} alt=""/>
+                <img src={img2} style={{width: '50%', maxWidth: '150px'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Инструменты для анализа доходов и расходов
                 </Typography>
             </Grid>
 
-            <Grid item xs={12} sm={4} md={3}
+            <Grid item xs={12} sm={3} md={3}
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
                       textAlign: "center",
-                      width: "105px",
+                      width: "100%",
                   }}
             >
-                <img src={img3} style={{width: '50%'}} alt=""/>
+                <img src={img3} style={{width: '50%', maxWidth: '150px'}} alt=""/>
                 <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
                     Возможность публикации в блоге
                 </Typography>
             </Grid>
 
-            <Grid item xs={12} sm={4} md={1.5}
-                  sx={{
+            <Grid item xs={0} sm={1.5} md={1.5}
+                  sx={theme => ({
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
+                      px: 3,
                       textAlign: "center",
                       marginTop: "auto",
                       marginBottom: 'auto',
-                  }}
+                      [theme.breakpoints.down('sm')]:{
+                          display: 'none'
+                      },
+                      [theme.breakpoints.up('sm')]:{
+                          display: 'block'
+                      },
+                  })}
             >
                 <img src={rightCurve} alt=""
                      style={{width: '5vh'}}

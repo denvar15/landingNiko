@@ -73,7 +73,7 @@ const DrawerItem = () => {
   };
 
   return (
-    <>
+    <div>
       <IconButton
       color="inherit"
       aria-label="open drawer"
@@ -88,10 +88,13 @@ const DrawerItem = () => {
       sx={{
           flexGrow: 1,
           flexShrink: 0,
+          overflow: "hidden",
+          height: "100%",
           '& .MuiDrawer-paper': {
           width: drawerWidth,
           },
       }}
+      ModalProps={{ disableScrollLock: true }}
       variant="persistent"
       anchor="right"
       open={open}
@@ -134,7 +137,7 @@ const DrawerItem = () => {
           })}
         </List>
       </Drawer>
-    </>
+    </div>
   )
 }
 

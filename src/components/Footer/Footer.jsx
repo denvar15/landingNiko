@@ -8,8 +8,8 @@ import {
 import Link from '@mui/material/Link';
 import FooterTitle from './FooterTitle'
 import FooterLink from './FooterLink'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
 
@@ -40,10 +40,12 @@ const Footer = () => {
     sx={{
       py: 4,
       px: 2,
+      backgroundColor: '#E9C7C4',
+      color: 'white'
     }}
     >
       <StackColumn>
-        <FooterTitle text={'address'} />
+        <FooterTitle text={'АДРЕС'} />
         <FooterLink 
         text={'15th Louis St, london 92382, eng'} 
         />
@@ -51,22 +53,21 @@ const Footer = () => {
         text={'25 999-345-10800'} 
         />
         <FooterLink 
-        text={'info@housesales.com'} 
+        text={'info@niko.com'}
         />
       </StackColumn>
       
       <StackColumn>
-        <FooterTitle text={'our services'} />
-        <FooterLink text={'buy house'} />
-        <FooterLink text={'sell house'} />
-        <FooterLink text={'rent house'} />
-        <FooterLink text={'build house'} />
+        <FooterTitle text={'НАШИ СЕРВИСЫ'} />
+        <FooterLink text={'МАРКЕТПЛЕЙС'} />
+        <FooterLink text={'AI ГЕНЕРАЦИЯ'} />
+        <FooterLink text={'ПАРТНЁРСКАЯ ПРОГРАММА'} />
       </StackColumn>
       <StackColumn>
-        <FooterTitle text={'our company'} />
-        <FooterLink text={'reporting'} />
-        <FooterLink text={'get in touch'} />
-        <FooterLink text={'management'} />
+        <FooterTitle text={'НАША КОМПАНИЯ'} />
+        <FooterLink text={'ОТЧЁТЫ'} />
+        <FooterLink text={'КОНТАКТЫ'} />
+        <FooterLink text={'КАРЬЕРА'} />
       </StackColumn>
 
       <StackColumn>
@@ -79,30 +80,30 @@ const Footer = () => {
         >
           <Link href="#" variant="body2" 
           sx={{
-            color: '#414141',
+            color: 'white',
             "&:hover": {
               color: '#1c2859',
             }
           }}
           >
-            <InstagramIcon />  
+            <TelegramIcon />
           </Link> 
           <Link href="#"variant="body2" 
           sx={{
-            color: '#414141',
+            color: 'white',
             "&:hover": {
               color: '#1c2859',
             }
           }}
           >
-            <FacebookIcon />
+            <WhatsAppIcon />
           </Link> 
         </Stack>
         <Typography 
         variant='caption'
         component='p' 
         >
-          &copy; 2022 HBSales Inc.
+          &copy; 2024 NIKO
         </Typography>
       </StackColumn>
     </BoxRow>

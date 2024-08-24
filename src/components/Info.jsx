@@ -10,7 +10,7 @@ import rightAr from '../assets/rightAr.png';
 import leftAr from '../assets/leftAr.png';
 
 
-const GetStarted = () => {
+const Info = () => {
 
     const TextNIKO = styled(Typography) (({ theme }) => ({
         fontWeight: 100,
@@ -70,10 +70,10 @@ const GetStarted = () => {
                       py: 3,
                   }}
             >
-                <Grid container xs={8} sm={11} md={11}
+                <Grid container xs={12} sm={12} md={11}
                       sx={{
                           px: 4,
-                          backgroundColor: '#C70656',
+                          backgroundColor: '#c70656',
                           order: {xs: 4, sm: 4, md: 3},
                           borderRadius: '0px 25px 25px 0px',
                       }}
@@ -96,11 +96,14 @@ const GetStarted = () => {
                     </Grid>
 
                     <Grid container xs={3} sm={1} md={1}
-                        sx={{
+                        sx={theme => ({
                         px: 2,
                         order: {xs: 4, sm: 4, md: 3},
-                        marginTop: "40%"
-                    }}
+                        marginTop: "40%",
+                            [theme.breakpoints.down('md')]:{
+                                display: 'none'
+                            },
+                    })}
                         >
                         <img src={rightAr} alt=""
                              style={{height: '30px'}}
@@ -115,17 +118,20 @@ const GetStarted = () => {
                   }}
             >
                 <Grid container xs={3} sm={1} md={1}
-                      sx={{
+                      sx={theme => ({
                           px: 2,
                           order: {xs: 4, sm: 4, md: 3},
-                          marginTop: "40%"
-                      }}
+                          marginTop: "40%",
+                              [theme.breakpoints.down('md')]:{
+                              display: 'none'
+                          },
+                      })}
                 >
                     <img src={leftAr} alt=""
                          style={{height: '30px'}}
                     />
                 </Grid>
-                <Grid container xs={8} sm={11} md={11}
+                <Grid container xs={12} sm={12} md={11}
                       sx={{
                           px: 4,
                           backgroundColor: '#ffffff',
@@ -157,4 +163,4 @@ const GetStarted = () => {
     )
 }
 
-export default GetStarted;
+export default Info;
