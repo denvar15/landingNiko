@@ -6,9 +6,8 @@ import {
     Typography,
 } from '@mui/material'
 // img
-import rightAr from '../assets/rightAr.png';
-import leftAr from '../assets/leftAr.png';
-
+import leftArrow from '../assets/leftArrow.png';
+import rightArrow from '../assets/rightArrow.png';
 
 const Info = () => {
 
@@ -105,7 +104,7 @@ const Info = () => {
                             },
                     })}
                         >
-                        <img src={rightAr} alt=""
+                        <img src={rightArrow} alt=""
                              style={{height: '30px'}}
                         />
                     </Grid>
@@ -127,7 +126,7 @@ const Info = () => {
                           },
                       })}
                 >
-                    <img src={leftAr} alt=""
+                    <img src={leftArrow} alt=""
                          style={{height: '30px'}}
                     />
                 </Grid>

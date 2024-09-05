@@ -100,14 +100,13 @@ const Header = () => {
                   position: "absolute",
                   marginTop: "150px",
                   zIndex: "0",
-                  display: 'none',
                   [theme.breakpoints.down('md')]:{
                       marginTop: "80px",
-                      marginRight: "-260px",
+                      marginRight: "-50vw",
                   },
                   [theme.breakpoints.up('md')]:{
                       marginTop: "90px",
-                      marginRight: "-620px",
+                      marginRight: "-75vw",
                   },
               })}
               >

@@ -9,12 +9,13 @@ import Title from './Title'
 // img
 import icon1 from '../assets/Icons.png';
 import icon2 from '../assets/Vector2.png';
-import leftCurve from '../assets/Vector3.png';
-import rightCurve from '../assets/Vector4.png';
+import leftArrow from '../assets/leftArrow.png';
+import rightArrow from '../assets/rightArrow.png';
 import img1 from '../assets/Group 153.png';
 import img2 from '../assets/Group 155.png';
 import img3 from '../assets/Group 156.png';
-
+import whatsapp from '../assets/whatsapp.png';
+import telegram from '../assets/telegram.png';
 
 const GetStarted = () => {
 
@@ -29,7 +30,7 @@ const GetStarted = () => {
         fontSize: '1.1rem',
         textAlign: 'start',
         lineHeight: '1.5',
-        color: 'white',
+        color: '#5F5F5F',
         marginTop: '0.5rem',
     })
 
@@ -116,7 +117,7 @@ const GetStarted = () => {
                       style={{maxHeight: "75px",
                           maxWidth: "75px"}}
                 >
-                    <img src={icon2} alt=""
+                    <img src={whatsapp} alt=""
                         style={{aspectRatio: '1/1', width: '100%'}}
                     />
                 </Grid>
@@ -142,7 +143,7 @@ const GetStarted = () => {
                       style={{maxHeight: "75px",
                           maxWidth: "75px"}}
                 >
-                    <img src={icon1} alt=""
+                    <img src={telegram} alt=""
                          style={{aspectRatio: '1/1', width: '100%'}}
                     />
                 </Grid>
@@ -164,7 +165,7 @@ const GetStarted = () => {
                 },
             })}
             >
-                <img src={leftCurve} alt=""
+                <img src={leftArrow} alt=""
                      style={{width: '5vh'}}
                 />
             </Grid>
@@ -227,7 +228,7 @@ const GetStarted = () => {
                       },
                   })}
             >
-                <img src={rightCurve} alt=""
+                <img src={rightArrow} alt=""
                      style={{width: '5vh'}}
                 />
             </Grid>

@@ -7,9 +7,9 @@ const Title = ({ text, textAlign }) => {
     variant='h4'
     component='h3'
     sx={{ 
-      fontWeight: '700',
+      fontWeight: '400',
       textAlign: textAlign,
-        color: 'white',
+        color: '#5F5F5F',
         marginTop: 'auto',
         marginBottom: 'auto'
     }}
