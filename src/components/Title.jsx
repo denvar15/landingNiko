@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material'
 import React from 'react'
 
-const Title = ({ text, textAlign }) => {
+const Title = ({ text, textAlign, color }) => {
   return (
     <Typography 
     variant='h4'
@@ -9,7 +9,7 @@ const Title = ({ text, textAlign }) => {
     sx={{ 
       fontWeight: '400',
       textAlign: textAlign,
-        color: '#5F5F5F',
+        color: {color},
         marginTop: 'auto',
         marginBottom: 'auto'
     }}

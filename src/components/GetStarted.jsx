@@ -70,6 +70,7 @@ const GetStarted = () => {
                         'Первый в мире AI-маркетплейс для кондитеров NIKO'
                     }
                     textAlign={'start'}
+                    color='#5F5F5F'
                     />
                     <CustomTypography>
                         Даст возможность создавать уникальные
