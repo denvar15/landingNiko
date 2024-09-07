@@ -20,16 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e84dca4b-eed8-43ce-8602-fa6831fc2114" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Carousel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Slider.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/windowSize.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FAQ.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FAQ.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Group 153.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Group 153.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Group 155.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Group 155.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Group 156.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Group 156.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/aiText.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/aiText.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/constructor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/constructor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videoContent.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videoContent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GetInTouch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GetInTouch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GetStarted.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GetStarted.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mission.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <workItem from="1724443802434" duration="3333000" />
       <workItem from="1724489714332" duration="11693000" />
       <workItem from="1724502743399" duration="840000" />
-      <workItem from="1725715183051" duration="10216000" />
+      <workItem from="1725715183051" duration="11316000" />
     </task>
     <servers />
   </component>

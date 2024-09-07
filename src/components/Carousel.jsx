@@ -47,9 +47,9 @@ const CarouselSlider = ({ setSlideCount, setCurrentSlide }) => {
             }
         };
 
-        if (screenWidth < 832) {
+        if (screenWidth < 400) {
             updateCarouselSlide(1);
-        } else if (screenWidth < 1088) {
+        } else if (screenWidth < 888) {
             updateCarouselSlide(2);
         }
         //>= 1088

@@ -121,9 +121,11 @@ const GetStarted = () => {
                       style={{maxHeight: "75px",
                           maxWidth: "75px"}}
                 >
-                    <img src={whatsapp} alt=""
-                        style={{aspectRatio: '1/1', width: '100%'}}
-                    />
+                    <a href="https://t.me/niko_pastry">
+                        <img src={whatsapp} alt=""
+                             style={{aspectRatio: '1/1', width: '100%'}}
+                        />
+                    </a>
                 </Grid>
                 <Grid container xs={0.5} sm={0.5} md={0.5}
                       sx={{
@@ -147,9 +149,11 @@ const GetStarted = () => {
                       style={{maxHeight: "75px",
                           maxWidth: "75px"}}
                 >
-                    <img src={telegram} alt=""
-                         style={{aspectRatio: '1/1', width: '100%'}}
-                    />
+                    <a href="https://t.me/niko_pastry">
+                        <img src={telegram} alt=""
+                             style={{aspectRatio: '1/1', width: '100%'}}
+                        />
+                    </a>
                 </Grid>
             </Grid>
 
@@ -159,7 +163,7 @@ const GetStarted = () => {
                       py: 3,
                       px: 3,
                       textAlign: "center",
-                      marginTop: "auto",
+                      marginTop: "20px",
                       marginBottom: '-60px',
                   })}>
                 <CarouselProvider

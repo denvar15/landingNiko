@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, styled, Typography } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 //img
 import cakeImg1 from '../assets/kandinsky-download-1722457353202 1.png'
 import cakeImg2 from '../assets/kandinsky-download-1722630604165 1.png'
@@ -33,18 +33,18 @@ const Header = () => {
     }));
 
     const TextNIKO = styled(Typography) (({ theme }) => ({
-        fontWeight: 700,
+        fontWeight: 500,
         fontSize: "220px",
         color: '#fff',
         fontFamily: "GirloSP",
         marginLeft: 'auto',
         marginRight: 'auto',
         [theme.breakpoints.down('md')]: {
-            fontWeight: 700,
+            fontWeight: 500,
             fontSize: "160px",
         },
         [theme.breakpoints.down('sm')]: {
-            fontWeight: 700,
+            fontWeight: 500,
             fontSize: "20vw",
         }
     }));
@@ -61,17 +61,26 @@ const Header = () => {
               </TextNIKO>
           </BoxText>
           <CustomBox component='header'>
-              <img
-                  src={overlay}
-                  alt="headerImg1"
-                  style={{
-                      position: "absolute",
-                      width: "100vw",
-                      height: "640px",
-                      marginTop: "-70px",
-                      zIndex: "0"
-                  }}
-              />
+              <Box sx={theme => ({
+                  [theme.breakpoints.down('lg')]:{
+                      opacity: "0.7"
+                  },
+                  [theme.breakpoints.up('lg')]:{
+                      opacity: "1.5"
+                  },
+              })}>
+                  <img
+                      src={overlay}
+                      alt="headerImg1"
+                      style={{
+                          position: "absolute",
+                          width: "100vw",
+                          height: "640px",
+                          marginTop: "-70px",
+                          zIndex: "0",
+                      }}
+                  />
+              </Box>
               <Box sx={theme => ({
                   zIndex: "-1",
                   [theme.breakpoints.down('lg')]:{

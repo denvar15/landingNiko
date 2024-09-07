@@ -72,7 +72,7 @@ const Info = () => {
         <Grid container spacing={{ xs: 0, sm: 0, md: 0 }}
               style={{backgroundColor: '#E9C7C4'}}
               sx={{
-                  marginTop: "-50px"
+                  marginTop: "-25px"
               }}
         >
             <Grid container xs={12} sm={16} md={12}
@@ -167,7 +167,7 @@ const Info = () => {
                         <Grid container xs={12} sm={12} md={11}
                               sx={{
                                   px: 4,
-                                  py: 4,
+                                  py: 2,
                                   backgroundColor: '#c70656',
                                   order: {xs: 4, sm: 4, md: 3},
                                   borderRadius: '0px 25px 25px 0px',
@@ -177,6 +177,7 @@ const Info = () => {
                             sx={{py: 2}}>
                                 <img src={girlRed} alt=""
                                      style={{height: '35vh', maxHeight: '500px',
+                                         marginLeft: "auto", marginRight: "auto",
                                          marginTop: "auto", marginBottom: "auto"}}
                                 />
                             </Grid>
@@ -257,7 +258,7 @@ const Info = () => {
                     />
                 </Grid>
                 {!currentSlide2 ? (
-                    <Slide direction="right" in={!currentSlide2} mountOnEnter unmountOnExit>
+                    <Slide direction="left" in={!currentSlide2} mountOnEnter unmountOnExit>
                     <Grid container xs={12} sm={12} md={11}
                           sx={{
                               px: 4,
@@ -358,11 +359,11 @@ const Info = () => {
                     </Slide>
                 ) : null}
                 {currentSlide2 ? (
-                    <Slide direction="right" in={currentSlide2} mountOnEnter unmountOnExit>
+                    <Slide direction="left" in={currentSlide2} mountOnEnter unmountOnExit>
                         <Grid container xs={12} sm={12} md={11}
                               sx={{
                                   px: 4,
-                                  py: 4,
+                                  py: 2,
                                   backgroundColor: 'white',
                                   order: {xs: 4, sm: 4, md: 3},
                                   borderRadius: '25px 0px 0px 25px',
@@ -386,6 +387,7 @@ const Info = () => {
                                   sx={{py: 2}}>
                                 <img src={boyWhite} alt=""
                                      style={{height: '35vh', maxHeight: '500px',
+                                         marginLeft: "auto", marginRight: "auto",
                                          marginTop: "auto", marginBottom: "auto"}}
                                 />
                             </Grid>
@@ -400,7 +402,7 @@ const Info = () => {
                                 Наша платформа - это не просто маркетплейс, это большое комьюнити, где кондитеры могут
                                 открывать для себя лучшие техники и создавать новые шедевры.
                             </Typography>
-                            <MoreText style={{color: "#5F5F5F", textAlign: 'right', marginBottom: "auto",
+                            <MoreText style={{color: "#5F5F5F", textAlign: 'left', marginBottom: "auto",
                                             cursor: "pointer"}}
                                       onClick={setCurrentSlide2.bind(this,!currentSlide2)}>
                                 НАЗАД

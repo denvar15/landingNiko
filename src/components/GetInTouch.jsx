@@ -132,21 +132,25 @@ const GetInTouch = () => {
                     <ContactText style={{color: '#ffffff', marginLeft: '-1vw'}}>
                         СОЦИАЛЬНЫЕ СЕТИ:
                     </ContactText>
-                    <img src={icon3} alt=""
-                         style={{
-                             height: "75px",
-                             width: "75px",
-                             margin: '10px'
-                         }}
-                    />
-                    <img src={icon4} alt=""
-                         style={{
-                             height: "75px",
-                             width: "75px",
-                             margin: '10px'
+                    <a href="https://t.me/niko_pastry">
+                        <img src={icon3} alt=""
+                             style={{
+                                 height: "75px",
+                                 width: "75px",
+                                 margin: '10px'
+                             }}
+                        />
+                    </a>
+                    <a href="https://t.me/niko_pastry">
+                        <img src={icon4} alt=""
+                             style={{
+                                 height: "75px",
+                                 width: "75px",
+                                 margin: '10px'
 
-                         }}
-                    />
+                             }}
+                        />
+                    </a>
                 </Grid>
             </Grid>
             <Grid container xs={12} sm={16} md={24}

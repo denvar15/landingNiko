@@ -78,7 +78,7 @@ const Footer = () => {
         maxWidth='100%'
         justifyContent='space-between'
         >
-          <Link href="#" variant="body2" 
+          <Link href="https://t.me/niko_pastry" variant="body2"
           sx={{
             color: 'white',
             "&:hover": {
@@ -88,7 +88,7 @@ const Footer = () => {
           >
             <TelegramIcon />
           </Link> 
-          <Link href="#"variant="body2" 
+          <Link href="https://t.me/niko_pastry"variant="body2"
           sx={{
             color: 'white',
             "&:hover": {
