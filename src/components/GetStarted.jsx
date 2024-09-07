@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from "react";
 import { 
     Box,
     Grid,
     styled,
     Typography,
 } from '@mui/material'
+import { CarouselProvider } from "pure-react-carousel";
 import Title from './Title'
+import CarouselSlider from "./Carousel"
 // img
-import icon1 from '../assets/Icons.png';
-import icon2 from '../assets/Vector2.png';
 import leftArrow from '../assets/leftArrow.png';
 import rightArrow from '../assets/rightArrow.png';
 import img1 from '../assets/Group 153.png';
@@ -18,6 +18,9 @@ import whatsapp from '../assets/whatsapp.png';
 import telegram from '../assets/telegram.png';
 
 const GetStarted = () => {
+
+    const [slideCount, setSlideCount] = useState(2);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     const CustomGridItem = styled(Grid) ({
         display: 'flex',
@@ -150,89 +153,29 @@ const GetStarted = () => {
                 </Grid>
             </Grid>
 
-            <Grid item xs={0} sm={1.5} md={1.5}
-            sx={theme => ({
-                order: {xs: 4, sm: 4, md: 3},
-                py: 3,
-                px: 3,
-                textAlign: "center",
-                marginTop: "auto",
-                marginBottom: 'auto',
-                [theme.breakpoints.down('sm')]:{
-                    display: 'none'
-                },
-                [theme.breakpoints.up('sm')]:{
-                    display: 'block'
-                },
-            })}
-            >
-                <img src={leftArrow} alt=""
-                     style={{width: '5vh'}}
-                />
-            </Grid>
-
-            <Grid item xs={12} sm={3} md={3}
-                  sx={theme => ({
-                      order: {xs: 4, sm: 4, md: 3},
-                      py: 3,
-                      textAlign: "center",
-                      width: "100%",
-                  })}
-            >
-                <img src={img1} style={{width: '50%', maxWidth: '150px'}} alt=""/>
-                <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
-                    Интерфейс для управления заказами
-                </Typography>
-            </Grid>
-
-            <Grid item xs={12} sm={3} md={3}
-                  sx={{
-                      order: {xs: 4, sm: 4, md: 3},
-                      py: 3,
-                      textAlign: "center",
-                      width: "100%",
-                  }}
-            >
-                <img src={img2} style={{width: '50%', maxWidth: '150px'}} alt=""/>
-                <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
-                    Инструменты для анализа доходов и расходов
-                </Typography>
-            </Grid>
-
-            <Grid item xs={12} sm={3} md={3}
-                  sx={{
-                      order: {xs: 4, sm: 4, md: 3},
-                      py: 3,
-                      textAlign: "center",
-                      width: "100%",
-                  }}
-            >
-                <img src={img3} style={{width: '50%', maxWidth: '150px'}} alt=""/>
-                <Typography style={{color: '#5F5F5F', marginTop: "5px"}}>
-                    Возможность публикации в блоге
-                </Typography>
-            </Grid>
-
-            <Grid item xs={0} sm={1.5} md={1.5}
+            <Grid item xs={12} sm={12} md={12}
                   sx={theme => ({
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
                       px: 3,
                       textAlign: "center",
                       marginTop: "auto",
-                      marginBottom: 'auto',
-                      [theme.breakpoints.down('sm')]:{
-                          display: 'none'
-                      },
-                      [theme.breakpoints.up('sm')]:{
-                          display: 'block'
-                      },
-                  })}
-            >
-                <img src={rightArrow} alt=""
-                     style={{width: '5vh'}}
-                />
+                      marginBottom: '-60px',
+                  })}>
+                <CarouselProvider
+                    visibleSlides={slideCount}
+                    totalSlides={6}
+                    step={1}
+                    currentSlide={currentSlide}
+                    naturalSlideWidth={200}
+                    naturalSlideHeight={105}
+                    isIntrinsicHeight={true}
+                >
+                <CarouselSlider setSlideCount={setSlideCount}
+                                setCurrentSlide={setCurrentSlide}/>
+                </CarouselProvider>
             </Grid>
+
         </Grid>
     )
 }

@@ -3,7 +3,7 @@ import { FormControl } from '@mui/material';
 import { useFormControl} from '@mui/material/FormControl';
 import { Input, inputClasses } from '@mui/material';
 import { styled } from '@mui/material';
-import leftAr from "../assets/leftAr.png";
+import whiteLeftArrow from '../assets/whiteLeftArrow.png';
 
 export default function BasicFormControl() {
     return (
@@ -13,7 +13,7 @@ export default function BasicFormControl() {
                 defaultValue="" required>
                 <StyledInput placeholder="E-MAIL" />
             </FormControl>
-            <img src={leftAr} alt=""
+            <img src={whiteLeftArrow} alt=""
                  style={{height: '40px', transform: 'rotate(180deg)',}}
             />
         </div>

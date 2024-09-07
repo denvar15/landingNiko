@@ -10,6 +10,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 // img
 import accordIcon from '../assets/accordIcon.png'
+import greyDownArrow from '../assets/greyDownArrow.png'
 
 
 const Cakes = () => {
@@ -64,7 +65,7 @@ const Cakes = () => {
                 </TextNIKO>
                 <Accordion style={{borderRadius: "15px", margin: '10px'}}>
                     <AccordionSummary
-                        expandIcon={<img src={accordIcon}/>}
+                        expandIcon={<img src={greyDownArrow}/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -79,7 +80,7 @@ const Cakes = () => {
                 </Accordion>
                 <Accordion style={{borderRadius: "15px", margin: '10px'}}>
                     <AccordionSummary
-                        expandIcon={<img src={accordIcon}/>}
+                        expandIcon={<img src={greyDownArrow}/>}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
@@ -94,7 +95,7 @@ const Cakes = () => {
                 </Accordion>
                 <Accordion style={{borderRadius: "15px", margin: '10px'}}>
                     <AccordionSummary
-                        expandIcon={<img src={accordIcon}/>}
+                        expandIcon={<img src={greyDownArrow}/>}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
