@@ -43,7 +43,7 @@ const Mission = () => {
 
     return (
 
-        <Grid container spacing={{ xs: 0, sm: 0, md: 0 }}
+        <Grid id="mission" container spacing={{ xs: 0, sm: 0, md: 0 }}
               style={{backgroundColor: '#E9C7C4'}}
               sx={{
                   marginTop: "0px"

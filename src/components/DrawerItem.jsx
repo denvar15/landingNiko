@@ -19,6 +19,10 @@ import InfoIcon from '@mui/icons-material/Info';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import CakeIcon from '@mui/icons-material/Cake';
+import PeopleIcon from '@mui/icons-material/People';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import RecentActorsIcon from '@mui/icons-material/RecentActors';
 
 const drawerWidth = 240;
 
@@ -34,28 +38,28 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 const itemList = [
     {
         text: "Для кондитеров",
-        icon: <HomeIcon />,
-        to: "/"
+        icon: <CakeIcon />,
+        to: "/#makers"
     },
     {
         text: "Для потребителей",
-        icon: <HomeIcon />,
-        to: "/about"
+        icon: <PeopleIcon />,
+        to: "/#consumers"
     },
     {
         text: "О нас",
         icon: <InfoIcon />,
-        to: "/contact"
+        to: "/#about"
     },
     {
         text: "Наша миссия",
-        icon: <HomeIcon />,
-        to: "/contact"
+        icon: <TipsAndUpdatesIcon />,
+        to: "/#mission"
     },
     {
         text: "Для связи",
-        icon: <EmailIcon />,
-        to: "/contact"
+        icon: <RecentActorsIcon />,
+        to: "/#contact"
     }
 ];
 
@@ -99,24 +103,22 @@ const DrawerItem = () => {
       anchor="right"
       open={open}
       >
-        <DrawerHeader>
+        <DrawerHeader style={{backgroundColor: "rgb(233, 199, 196)"}}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
-        <Divider />
-        <List>
+        <List style={{backgroundColor: "rgb(233, 199, 196)"}}>
           {itemList.map( ( item ) => {
             const { text } = item;
             return(
               <ListItem 
               key={text} 
-              component={Link} 
               to={item.to}
               sx={{
                 color: '#414141',
                 "&:hover": {
-                  backgroundColor: '#e9e5e5',
+                  backgroundColor: 'rgb(178 110 194 / 42%)',
                   color: '#1c2859',
                 }
               }}
@@ -129,13 +131,18 @@ const DrawerItem = () => {
                   }
                 }}
                 >
-                  {item.icon}
+                  <a style={{color: "#414141"}} href={item.to}>
+                    {item.icon}
+                  </a>
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                <a style={{textDecoration: "none", color: "#414141"}} href={item.to}>
+                  <ListItemText href={item.to} primary={text} />
+                </a>
               </ListItem>
             )
           })}
         </List>
+        <div id="mem" style={{backgroundColor: "rgb(233, 199, 196)", height:"100vh"}}> </div>
       </Drawer>
     </div>
   )

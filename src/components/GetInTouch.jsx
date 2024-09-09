@@ -66,7 +66,7 @@ const GetInTouch = () => {
 
     return (
 
-        <Grid container spacing={{ xs: 0, sm: 0, md: 0 }}
+        <Grid id="contact" container spacing={{ xs: 0, sm: 0, md: 0 }}
               style={{backgroundColor: '#E9C7C4'}}
         >
             <CustomGridItem item xs={12} sm={16} md={24}

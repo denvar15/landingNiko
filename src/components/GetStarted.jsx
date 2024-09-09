@@ -53,7 +53,7 @@ const GetStarted = () => {
 
     return (
             
-        <Grid container spacing={{ xs: 0, sm: 0, md: 0 }}
+        <Grid id="about" container spacing={{ xs: 0, sm: 0, md: 0 }}
               style={{backgroundColor: '#E9C7C4'}}
         sx={{
             py: 8,

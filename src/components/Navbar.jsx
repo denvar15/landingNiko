@@ -33,23 +33,23 @@ const ListMenu = styled(List)(({ theme }) => ({
 const itemList = [
     {
       text: "Для кондитеров",
-      to: "/" 
+      to: "/#makers" 
     },
     {
       text: "Для потребителей",
-      to: "/about"
+      to: "/#consumers"
     },
     {
         text: "О нас",
-        to: "/contact"
+        to: "/#about"
     },
     {
         text: "Наша миссия",
-        to: "/contact"
+        to: "/#mission"
     },
     {
         text: "Для связи",
-        to: "/contact"
+        to: "/#contact"
     }
 ];
 
@@ -82,7 +82,7 @@ const Navbar = () => {
                         const { text } = item;
                         return(
                             <ListItem key={text}>
-                                <ListItemButton component={Link} to={item.to}
+                                <ListItemButton to={item.to}
                                 sx={{
                                     color: '#fff',
                                     "&:hover": {
@@ -92,7 +92,7 @@ const Navbar = () => {
                                     whiteSpace: "nowrap"
                                 }}
                                 >
-                                    <ListItemText primary={text} />
+                                    <ListItemText href={item.to} primary={text} />
                                 </ListItemButton>
                             </ListItem>
                         )

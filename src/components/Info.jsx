@@ -75,7 +75,7 @@ const Info = () => {
                   marginTop: "-25px"
               }}
         >
-            <Grid container xs={12} sm={16} md={12}
+            <Grid id="makers" container xs={12} sm={16} md={12}
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
@@ -236,7 +236,7 @@ const Info = () => {
                     </Grid>
             </Grid>
 
-            <Grid container xs={12} sm={16} md={12}
+            <Grid id="consumers" container xs={12} sm={16} md={12}
                   sx={{
                       order: {xs: 4, sm: 4, md: 3},
                       py: 3,
